@@ -7,4 +7,4 @@ class Information(models.Model):
 
     name = fields.Char(string="Title", required=True, help="Save information")
     description = fields.Text()
-
+    company_id = fields.Many2one('res.company', string='Company')
