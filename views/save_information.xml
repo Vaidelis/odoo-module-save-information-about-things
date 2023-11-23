@@ -50,6 +50,6 @@
 
     <menuitem id="saveinformation_menu" name="Menu" groups="group_saveinformation_manager" parent="main_saveinformation_menu"/>
 
-    <menuitem id="test" name="Information portfolio" groups="group_saveinformation_manager" parent="saveinformation_menu" action="save_information.save_information_list_action"/>
+    <menuitem id="information_portfolio" name="Information portfolio" groups="group_saveinformation_manager" parent="saveinformation_menu" action="save_information.save_information_list_action"/>
 
 </odoo>
