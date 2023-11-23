@@ -41,7 +41,7 @@
     </record>
 
     <record model="ir.actions.act_window" id="save_information.save_information_list_action">
-        <field name="name">save_information.tree</field>
+        <field name="name">Information</field>
         <field name="res_model">save_information.save_information</field>
         <field name="view_mode">tree,form</field>
     </record>
