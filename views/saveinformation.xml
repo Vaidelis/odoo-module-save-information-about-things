@@ -9,6 +9,7 @@
                     <group>
                         <field name="name"/>
                         <field name="description"/>
+                        <field name="company_id"/>
                     </group>
                 </sheet>
             </form>
@@ -22,6 +23,7 @@
             <tree>
                 <field name="name"/>
                 <field name="description"/>
+                <field name="company_id"/>
             </tree>
         </field>
     </record>
@@ -33,6 +35,7 @@
             <search>
                 <field name="name"/>
                 <field name="description"/>
+                <field name="company_id"/>
             </search>
         </field>
     </record>
@@ -41,17 +44,12 @@
         <field name="name">Information</field>
         <field name="res_model">save_information.save_information</field>
         <field name="view_mode">tree,form</field>
-        <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">
-                Create first item
-            </p>
-        </field>
     </record>
 
-    <menuitem id="main_saveinformation_menu" name="Save information" groups="group_saveinformation_manager"/>
+    <menuitem id="main_saveinformation_menu" name="Information portfolio" groups="group_saveinformation_manager"/>
 
-    <menuitem id="saveinformation_menu" name="Save information" groups="group_saveinformation_manager" parent="main_saveinformation_menu"/>
+    <menuitem id="saveinformation_menu" name="Menu" groups="group_saveinformation_manager" parent="main_saveinformation_menu"/>
 
-    <menuitem id="test" name="Test" groups="group_saveinformation_manager" parent="saveinformation_menu" action="save_information.save_information_list_action"/>
+    <menuitem id="test" name="Information portfolio" groups="group_saveinformation_manager" parent="saveinformation_menu" action="save_information.save_information_list_action"/>
 
 </odoo>
