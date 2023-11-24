@@ -23,9 +23,9 @@
 
     # always loaded
     'data': [
-        #'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'security/security.xml',
         'views/save_information.xml',
-        'wizard/information_report_view.xml',
+        'views/information_report_view.xml',
     ],
 }
