@@ -52,4 +52,6 @@
 
     <menuitem id="information_portfolio" name="Information portfolio" groups="group_saveinformation_manager" parent="saveinformation_menu" action="save_information.save_information_list_action"/>
 
+    <menuitem id="menu_information_report" name="Information reports" parent="saveinformation_menu" sequence="10" action="action_report_information"/>
+
 </odoo>

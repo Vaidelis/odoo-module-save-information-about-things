@@ -1,16 +1,15 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "save_information",
+    'name': "Save information",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Module for saving information about items""",
 
     'description': """
-        Long description of module's purpose
+        Module can save information about items and declare for which company item belongs
     """,
 
-    'author': "My Company",
+    'author': "Vaidas",
     'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
@@ -27,9 +26,6 @@
         'security/ir.model.access.csv',
         'security/security.xml',
         'views/save_information.xml',
-    ],
-    # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
+        'views/information_report_view.xml',
     ],
 }

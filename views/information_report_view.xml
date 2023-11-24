@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+    <record id="view_report_information_from" model="ir.ui.view">
+        <field name="name">save_information.report.wizard.form</field>
+        <field name="model">save_information.report.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Print information">
+                <group>
+                    <field name="date_from"/>
+                    <field name="date_to"/>
+                </group>
+                <footer>
+                    <button name="action_print_report" type="object" string="Print" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_report_information" model="ir.actions.act_window">
+        <field name="name">Information report</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">save_information.report.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>
