@@ -18,13 +18,11 @@
         </field>
     </record>
 
-    <record id="save_information.action_report_information" model="ir.actions.act_window">
-        <field name="name">Information report</field>
-        <field name="type">ir.actions.act_window</field>
-        <field name="res_model">save_information.report.wizard</field>
-        <field name="view_mode">form</field>
-        <field name="target">new</field>
-    </record>
+    <act_window id="save_information.action_report_information"
+                    name="Information report"
+                    res_model="save_information.report.wizard"
+                    view_mode="form"
+                    target="new"/>
 
     <menuitem id="menu_information_report" name="Information reports" parent="saveinformation_menu" sequence="10" action="save_information.action_report_information"/>
 

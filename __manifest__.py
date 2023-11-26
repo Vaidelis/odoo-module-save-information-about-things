@@ -27,5 +27,7 @@
         'security/security.xml',
         'views/save_information.xml',
         'views/information_report_view.xml',
+        'report/information_details.xml',
+        'report/report.xml',
     ],
 }

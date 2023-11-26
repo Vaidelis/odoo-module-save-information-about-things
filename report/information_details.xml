@@ -1,0 +1,41 @@
+<odoo>
+    <report id="report_save_information"
+            model="save_information.report.wizard"
+            string="Example (PDF)"
+            report_type="qweb-pdf"
+            name="save_information.information_report_template"
+            file="save_information.information_report_template"
+            menu="False"/>
+    <template id="information_report_template">
+    <t t-call="web.html_container">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <br/>
+                <h2 class="text-center" style="border: 1px solid lightgray; padding: 10px 10px;">
+                    <span>Information</span>
+                </h2>
+                <br/>
+
+                <table class="table table-bordered table-sm text-center">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Company</th>
+                        </tr>
+                    </thead>
+                    <tbody class="sale_tbody">
+                        <t t-foreach="data" t-as="record">
+                            <tr>
+                                <td><t t-esc="record.name"/></td>
+                                <td><t t-esc="record.description"/></td>
+                                <td><t t-esc="record.company_id.name"/></td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </div>
+        </t>
+    </t>
+    </template>
+</odoo>

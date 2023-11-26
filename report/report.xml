@@ -1,0 +1,10 @@
+<odoo>
+<report id="report_save_information_1"
+
+string="Information Report"
+model="save_information.report.wizard"
+report_type="qweb-pdf"
+name="save_information.information_details"
+file="save_information.information_details"
+menu="False"/>
+</odoo>
